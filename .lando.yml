@@ -4,3 +4,8 @@ config:
   framework: drupal9
   site: layout-builder-paragraphs
   id: 74a1542f-013e-445d-815d-9856a2612054
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://layout-builder-paragraphs.lndo.site"
