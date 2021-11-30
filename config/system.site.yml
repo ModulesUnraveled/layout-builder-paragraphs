@@ -1,0 +1,14 @@
+uuid: 49ba0154-65e6-4c32-8efd-70e409649088
+name: layout-builder-paragraphs
+mail: brian@fourkitchens.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
