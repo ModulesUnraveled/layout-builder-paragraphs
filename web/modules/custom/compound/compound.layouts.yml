@@ -1,0 +1,12 @@
+awesome:
+  label: "Awesome Layout"
+  category: "Compound"
+  template: templates/awesome
+  default_region: primary
+  regions:
+    primary:
+      label: Primary Content
+    secondary:
+      label: Secondary Content
+  icon_map:
+    - [primary, primary, secondary]

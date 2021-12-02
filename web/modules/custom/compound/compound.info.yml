@@ -1,0 +1,6 @@
+name: "Compound Layouts"
+type: module
+description: "Layouts for Compound"
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Compound
