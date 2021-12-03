@@ -1,0 +1,23 @@
+uuid: ed5f00fe-269c-4204-be4a-94890fa302eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - olivero_overrides
+_core:
+  default_config_hash: jGkBUnwRXYacHWTR8hjjwn_a_PRM-Xj_xSHoB0WIfEo
+id: olivero_overrides_syndicate
+theme: olivero_overrides
+region: social
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  provider: node
+  label_display: '0'
+  block_count: 10
+visibility: {  }

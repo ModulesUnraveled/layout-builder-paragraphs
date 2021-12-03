@@ -1,0 +1,22 @@
+uuid: b4a397d0-30ad-4f62-97a5-92d0aa52fb3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero_overrides
+_core:
+  default_config_hash: 5kL_iZM_xia3Z8bgsyiZgQphxMGhI8gt2HYo8r5Z7OE
+id: olivero_overrides_powered
+theme: olivero_overrides
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

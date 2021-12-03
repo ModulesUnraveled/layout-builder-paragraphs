@@ -1,0 +1,20 @@
+uuid: b5885a0a-4963-426a-b7e1-9c4da7597329
+langcode: en
+status: true
+dependencies:
+  theme:
+    - olivero_overrides
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: olivero_overrides_primary_admin_actions
+theme: olivero_overrides
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

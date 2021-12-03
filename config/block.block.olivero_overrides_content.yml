@@ -1,0 +1,22 @@
+uuid: 4faf846e-5eb0-4a11-9661-acbfbdd034ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero_overrides
+_core:
+  default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
+id: olivero_overrides_content
+theme: olivero_overrides
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

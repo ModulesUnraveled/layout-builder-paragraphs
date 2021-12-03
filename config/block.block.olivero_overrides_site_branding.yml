@@ -1,0 +1,25 @@
+uuid: 1ee6d759-5664-4715-a152-f039a65630b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero_overrides
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: olivero_overrides_site_branding
+theme: olivero_overrides
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
