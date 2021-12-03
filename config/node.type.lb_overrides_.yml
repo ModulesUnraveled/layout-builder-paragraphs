@@ -1,0 +1,17 @@
+uuid: 3dec859c-13cc-45d6-9f66-eb6fd7ae4354
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'LB (Overrides)'
+type: lb_overrides_
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,50 @@
+uuid: 514d3622-319d-4571-9998-e5ecf04c249c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.lb_overrides_
+  module:
+    - entity_reference_revisions
+id: node.lb_overrides_.field_content
+field_name: field_content
+entity_type: node
+bundle: lb_overrides_
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      stories_block:
+        weight: 9
+        enabled: false
+      stories_cta:
+        weight: 10
+        enabled: false
+      stories_curated_content:
+        weight: 11
+        enabled: false
+      stories_link_list:
+        weight: 12
+        enabled: false
+      stories_quote:
+        weight: 13
+        enabled: false
+      stories_table:
+        weight: 14
+        enabled: false
+      stories_text:
+        weight: 15
+        enabled: false
+      stories_views:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

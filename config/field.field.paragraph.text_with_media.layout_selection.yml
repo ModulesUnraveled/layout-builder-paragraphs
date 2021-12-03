@@ -1,0 +1,21 @@
+uuid: 98f99281-3c11-448d-b14e-ca3ff994ecad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.layout_selection
+    - paragraphs.paragraphs_type.text_with_media
+id: paragraph.text_with_media.layout_selection
+field_name: layout_selection
+entity_type: paragraph
+bundle: text_with_media
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

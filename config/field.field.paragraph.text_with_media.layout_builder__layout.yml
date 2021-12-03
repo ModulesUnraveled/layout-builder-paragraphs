@@ -1,0 +1,21 @@
+uuid: f7ca4cdb-d0a0-47c0-9163-34321a5cbc5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.layout_builder__layout
+    - paragraphs.paragraphs_type.text_with_media
+  module:
+    - layout_builder
+id: paragraph.text_with_media.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: paragraph
+bundle: text_with_media
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

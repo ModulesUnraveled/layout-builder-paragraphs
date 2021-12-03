@@ -1,0 +1,16 @@
+uuid: 9c73a5b8-b2e7-4e67-9981-fe608f0a9821
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: text_with_media
+label: 'Text with Media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      awesome: 'Awesome Layout'

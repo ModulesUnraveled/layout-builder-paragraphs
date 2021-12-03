@@ -1,0 +1,29 @@
+uuid: 17c6f14a-5c3b-4edd-9d8c-c917dadfe941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_image
+    - media.type.image
+    - node.type.lb_overrides_
+id: node.lb_overrides_.field_hero_image
+field_name: field_hero_image
+entity_type: node
+bundle: lb_overrides_
+label: 'Hero Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
