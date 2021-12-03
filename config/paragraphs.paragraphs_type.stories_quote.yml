@@ -1,0 +1,12 @@
+uuid: 8a1a04fa-8ef9-4f82-b490-2cba12fc9485
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vclwnELneqEQB_Gca0_hsAOwQLqq6uwkpATnvOcMzHc
+id: stories_quote
+label: Quote
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

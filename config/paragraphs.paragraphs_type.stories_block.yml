@@ -1,0 +1,12 @@
+uuid: 796c69cc-d886-49a0-8244-77e281fca2f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Mj3XTLQvBmLL1NQ3jgO2-RPqokXfkQvumjDAf_Zc-_E
+id: stories_block
+label: Block
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

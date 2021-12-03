@@ -1,0 +1,24 @@
+uuid: fb32a59d-134b-4015-9360-a96b5fd9d60c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lb_no_overrides_.field_content
+    - field.field.node.lb_no_overrides_.field_hero_image
+    - node.type.lb_no_overrides_
+  module:
+    - user
+id: node.lb_no_overrides_.teaser
+targetEntityType: node
+bundle: lb_no_overrides_
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content: true
+  field_hero_image: true

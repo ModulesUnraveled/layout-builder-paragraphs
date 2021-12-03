@@ -1,0 +1,22 @@
+uuid: cd16d96c-6599-4fc0-b782-d6ce288ae7ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lb_no_overrides_
+id: node.lb_no_overrides_.promote
+field_name: promote
+entity_type: node
+bundle: lb_no_overrides_
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,12 @@
+uuid: 237b0cbe-03d9-475c-bd43-a906fb42f7a3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lscK7B2yLzAIeAToOVL0Ym6mUVCgDC8CxZ9bYkII_UY
+id: stories_cta
+label: 'Call to Action'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

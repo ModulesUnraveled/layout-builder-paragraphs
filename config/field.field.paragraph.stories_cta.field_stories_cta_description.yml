@@ -1,0 +1,23 @@
+uuid: 210c059a-49c3-4d57-8bac-14a61abc6900
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stories_cta_description
+    - paragraphs.paragraphs_type.stories_cta
+  module:
+    - text
+_core:
+  default_config_hash: 4OOQ1TIIO_XwHQGMF7ji-QaH6sMLhgi8Xdx3G7Fbgj4
+id: paragraph.stories_cta.field_stories_cta_description
+field_name: field_stories_cta_description
+entity_type: paragraph
+bundle: stories_cta
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

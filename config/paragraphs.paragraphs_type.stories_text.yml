@@ -1,0 +1,12 @@
+uuid: 5ae8992b-afbd-4cae-9d27-5b8df73fa505
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WPZELSBpsvMgOqwThaCwrzh7ZQzFztwfIQnG0hVFffA
+id: stories_text
+label: Text
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

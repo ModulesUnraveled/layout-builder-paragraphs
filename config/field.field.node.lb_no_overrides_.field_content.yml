@@ -1,0 +1,25 @@
+uuid: be9c8737-7507-488c-8eae-e9885bb189c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.lb_no_overrides_
+  module:
+    - entity_reference_revisions
+id: node.lb_no_overrides_.field_content
+field_name: field_content
+entity_type: node
+bundle: lb_no_overrides_
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+field_type: entity_reference_revisions

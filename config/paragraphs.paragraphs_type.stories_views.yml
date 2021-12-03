@@ -1,0 +1,12 @@
+uuid: 47e7dcf6-88ad-479e-9e05-4613a5fd3e7a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BTW3dV44J49R7pJ0_Da6s3PwX2X4jkrxPCHwZryq9_g
+id: stories_views
+label: 'Views Content List'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }
