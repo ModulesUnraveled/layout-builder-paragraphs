@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.regular_content_type.field_content
     - node.type.regular_content_type
   module:
-    - paragraphs
+    - layout_paragraphs
     - path
 id: node.regular_content_type.default
 targetEntityType: node
@@ -22,14 +22,12 @@ content:
   field_content:
     weight: 1
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: closed
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
+      preview_view_mode: default
+      nesting_depth: 0
+      empty_message: ''
+      require_layouts: 0
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: layout_paragraphs
     region: content
   path:
     type: path

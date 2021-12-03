@@ -1,0 +1,10 @@
+{% set variation = variation|default('default') %}
+
+<div {{ attributes.addClass('awesome') }} data-variation={{ variation }}>
+	<div {{ region_attributes.primary.addClass('awesome__primary') }}>
+		{{ content.primary }}
+	</div>
+	<div {{ region_attributes.secondary.addClass('awesome__secondary') }}>
+		{{ content.secondary }}
+	</div>
+</div>

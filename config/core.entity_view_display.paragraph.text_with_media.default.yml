@@ -3,17 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_with_media.field_media
-    - field.field.paragraph.text_with_media.field_stories_heading
-    - field.field.paragraph.text_with_media.field_stories_text_formatted
+    - field.field.paragraph.text_with_media.field_content
     - field.field.paragraph.text_with_media.layout_builder__layout
     - field.field.paragraph.text_with_media.layout_selection
     - paragraphs.paragraphs_type.text_with_media
   module:
     - compound
+    - entity_reference_revisions
     - layout_builder
+    - layout_builder_restrictions
     - layout_library
-    - text
 third_party_settings:
   layout_builder:
     allow_custom: true
@@ -25,69 +24,85 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          c5f7d778-b614-4694-a27c-f9d6b5d001dd:
-            uuid: c5f7d778-b614-4694-a27c-f9d6b5d001dd
+          e7c6c359-d816-42cc-bf9d-7ff070075279:
+            uuid: e7c6c359-d816-42cc-bf9d-7ff070075279
             region: primary
             configuration:
-              id: 'field_block:paragraph:text_with_media:field_stories_heading'
-              label: Heading
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: above
-                type: string
-                settings: {  }
-                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
-          59cc769f-fb8d-4408-887a-1be6665ea14f:
-            uuid: 59cc769f-fb8d-4408-887a-1be6665ea14f
-            region: primary
-            configuration:
-              id: 'field_block:paragraph:text_with_media:field_stories_text_formatted'
-              label: Text
-              provider: layout_builder
-              label_display: '0'
+              id: 'field_block:paragraph:text_with_media:field_content'
               formatter:
+                type: entity_reference_revisions_entity_view
                 label: above
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 1
-          6ab96e3e-4639-4214-8eb7-635721cad9af:
-            uuid: 6ab96e3e-4639-4214-8eb7-635721cad9af
-            region: secondary
-            configuration:
-              id: 'field_block:paragraph:text_with_media:field_media'
-              label: Media
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
                 settings:
-                  link: true
+                  view_mode: default
+                  link: ''
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
             additional: {  }
             weight: 0
         third_party_settings: {  }
   layout_library:
     enable: true
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      restricted_categories: {  }
+      allowed_layouts:
+        - awesome
+        - awesome_inverse
+    entity_view_mode_restriction_by_region:
+      allowed_layouts:
+        - awesome
+        - awesome_inverse
+      whitelisted_blocks:
+        awesome:
+          primary:
+            'Content fields':
+              - 'field_block:paragraph:text_with_media:field_content'
+          secondary:
+            'Content fields':
+              - 'field_block:paragraph:text_with_media:field_content'
+      restricted_categories:
+        awesome:
+          primary:
+            - 'Custom block types'
+            - Devel
+            - Forms
+            - Help
+            - 'Inline blocks'
+            - 'Lists (Views)'
+            - Menus
+            - System
+            - User
+            - core
+          secondary:
+            - 'Custom block types'
+            - Devel
+            - Forms
+            - Help
+            - 'Inline blocks'
+            - 'Lists (Views)'
+            - Menus
+            - System
+            - User
+            - core
 id: paragraph.text_with_media.default
 targetEntityType: paragraph
 bundle: text_with_media
 mode: default
 content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: primary
   field_media:
     type: entity_reference_entity_view
     weight: 2

@@ -1,12 +1,26 @@
 awesome:
   label: "Awesome Layout"
   category: "Compound"
-  template: templates/awesome
-  default_region: primary
+  template: templates/awesome/awesome_default
+  library: compound/awesome
   regions:
     primary:
       label: Primary Content
     secondary:
       label: Secondary Content
+  default_region: primary
   icon_map:
     - [primary, primary, secondary]
+awesome_inverse:
+  label: "Awesome Inverse Layout"
+  category: "Compound"
+  template: templates/awesome/awesome_inverse
+  library: compound/awesome_inverse
+  regions:
+    primary:
+      label: Primary Content
+    secondary:
+      label: Secondary Content
+  default_region: primary
+  icon_map:
+    - [secondary, primary, primary]

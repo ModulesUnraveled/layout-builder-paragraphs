@@ -1,0 +1,17 @@
+.awesome {
+  display: grid;
+  gap: 1rem;
+  /* This is required for the admin UI since it uses super long example text */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+}
+
+.awesome__primary {
+  grid-area: primary;
+}
+
+.awesome__secondary {
+  grid-area: secondary;
+}

@@ -16,6 +16,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -30,9 +31,12 @@ module:
   image: 0
   inline_entity_form: 0
   layout_builder: 0
+  layout_builder_restrictions: 0
+  layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   layout_library: 0
   layout_paragraphs: 0
+  layout_paragraphs_restriction: 0
   link: 0
   media: 0
   media_entity_slideshow: 0

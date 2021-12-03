@@ -1,0 +1,3 @@
+.awesome {
+  grid-template: "secondary primary" / 1fr 2fr;
+}

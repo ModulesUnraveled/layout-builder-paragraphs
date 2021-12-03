@@ -1,0 +1,12 @@
+awesome:
+  version: 1.x
+  css:
+    theme:
+      css/awesome/awesome.css: {}
+      css/awesome/awesome-default.css: {}
+awesome_inverse:
+  version: 1.x
+  css:
+    theme:
+      css/awesome/awesome.css: {}
+      css/awesome/awesome-inverse.css: {}

@@ -1,0 +1,57 @@
+uuid: 4b566c07-aae8-4faf-80a1-96b5583f33bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.stories_quote
+    - paragraphs.paragraphs_type.stories_text
+    - paragraphs.paragraphs_type.text_with_media
+  module:
+    - entity_reference_revisions
+id: paragraph.text_with_media.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: text_with_media
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stories_quote: stories_quote
+      stories_text: stories_text
+    target_bundles_drag_drop:
+      stories_block:
+        weight: 10
+        enabled: false
+      stories_cta:
+        weight: 11
+        enabled: false
+      stories_curated_content:
+        weight: 12
+        enabled: false
+      stories_link_list:
+        weight: 13
+        enabled: false
+      stories_quote:
+        enabled: true
+        weight: 14
+      stories_table:
+        weight: 15
+        enabled: false
+      stories_text:
+        enabled: true
+        weight: 16
+      stories_views:
+        weight: 17
+        enabled: false
+      text_with_media:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

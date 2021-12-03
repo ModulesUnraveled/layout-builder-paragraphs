@@ -15,6 +15,7 @@
     ],
     "require": {
         "drupal/admin_toolbar": "^3.0",
+        "drupal/devel": "^4.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/gin": "^3.0@alpha",
         "drupal/layout_builder_component_attributes": "^2.0",
@@ -26,6 +27,7 @@
         "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/layout_library": "^1.0@beta",
         "drupal/layout_paragraphs": "^2.0",
+        "drupal/layout_paragraphs_restriction": "^1.0@alpha",
         "drupal/stories": "^2.0@alpha",
         "drush-ops/behat-drush-endpoint": "^9.4",
         "drush/drush": "^10",

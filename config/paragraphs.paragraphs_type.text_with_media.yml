@@ -14,3 +14,4 @@ behavior_plugins:
     enabled: true
     available_layouts:
       awesome: 'Awesome Layout'
+      awesome_inverse: 'Awesome Inverse Layout'
