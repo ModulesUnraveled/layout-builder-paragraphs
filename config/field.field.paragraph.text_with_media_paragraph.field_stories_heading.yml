@@ -1,0 +1,19 @@
+uuid: a4e8ce28-3a75-4c55-a574-2f7d023760d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stories_heading
+    - paragraphs.paragraphs_type.text_with_media_paragraph
+id: paragraph.text_with_media_paragraph.field_stories_heading
+field_name: field_stories_heading
+entity_type: paragraph
+bundle: text_with_media_paragraph
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

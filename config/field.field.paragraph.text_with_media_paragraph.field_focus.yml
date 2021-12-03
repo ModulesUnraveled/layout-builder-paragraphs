@@ -1,0 +1,23 @@
+uuid: 2b3481ba-a08a-40ef-927c-d39530445907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_focus
+    - paragraphs.paragraphs_type.text_with_media_paragraph
+  module:
+    - options
+id: paragraph.text_with_media_paragraph.field_focus
+field_name: field_focus
+entity_type: paragraph
+bundle: text_with_media_paragraph
+label: Focus
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: equal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

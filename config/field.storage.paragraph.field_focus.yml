@@ -1,0 +1,30 @@
+uuid: bd057f11-44de-4f13-98b7-095528213773
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_focus
+field_name: field_focus
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: equal
+      label: Equal
+    -
+      value: text
+      label: Text
+    -
+      value: media
+      label: Media
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

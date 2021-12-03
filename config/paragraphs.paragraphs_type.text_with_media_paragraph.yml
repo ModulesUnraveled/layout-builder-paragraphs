@@ -1,0 +1,10 @@
+uuid: 6817bab4-7e3e-4f0c-9c62-cca284078d55
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_media_paragraph
+label: 'Text with Media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

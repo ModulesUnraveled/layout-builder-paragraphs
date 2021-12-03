@@ -5,7 +5,7 @@ dependencies:
   module:
     - layout_paragraphs
 id: text_with_media
-label: 'Text with Media'
+label: 'Text with Media (LB)'
 icon_uuid: null
 icon_default: null
 description: ''
@@ -13,5 +13,5 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      awesome: 'Awesome Layout'
       awesome_inverse: 'Awesome Inverse Layout'
+      awesome: 'Awesome Layout'

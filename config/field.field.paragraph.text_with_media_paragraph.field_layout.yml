@@ -1,0 +1,23 @@
+uuid: 92ff7bf0-fb8c-4818-8643-6478d8b89769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.text_with_media_paragraph
+  module:
+    - options
+id: paragraph.text_with_media_paragraph.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: text_with_media_paragraph
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: media-left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

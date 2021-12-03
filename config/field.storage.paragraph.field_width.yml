@@ -1,0 +1,30 @@
+uuid: 75f78d10-ba00-4893-8470-11e7c8b9522b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_width
+field_name: field_width
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: feature
+      label: Feature
+    -
+      value: highlight
+      label: Highlight
+    -
+      value: callout
+      label: Callout
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

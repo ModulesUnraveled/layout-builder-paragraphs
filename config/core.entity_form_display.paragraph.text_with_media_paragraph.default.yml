@@ -1,0 +1,74 @@
+uuid: b81dc350-870a-462f-8f6b-ab2db833f759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_media_paragraph.field_focus
+    - field.field.paragraph.text_with_media_paragraph.field_layout
+    - field.field.paragraph.text_with_media_paragraph.field_media
+    - field.field.paragraph.text_with_media_paragraph.field_stories_heading
+    - field.field.paragraph.text_with_media_paragraph.field_stories_text_formatted
+    - field.field.paragraph.text_with_media_paragraph.field_width
+    - paragraphs.paragraphs_type.text_with_media_paragraph
+  module:
+    - inline_entity_form
+    - text
+id: paragraph.text_with_media_paragraph.default
+targetEntityType: paragraph
+bundle: text_with_media_paragraph
+mode: default
+content:
+  field_focus:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_layout:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_media:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_stories_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_stories_text_formatted:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_width:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
