@@ -1,0 +1,17 @@
+{{ attach_library('olivero_overrides/text_with_media') }}
+
+{% set width = content.field_width.0['#markup'] %}
+{% set layout = content.field_layout.0['#markup'] %}
+{% set focus = content.field_focus.0['#markup'] %}
+
+{{ dpm(content) }}
+
+<div class='awesome' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
+	<div class='awesome__text'>
+		<h2>{{ content.field_stories_heading }}</h2>
+		<div>{{ content.field_stories_text_formatted }}</div>
+	</div>
+	<div class='awesome__media'>
+		{{ content.field_media }}
+	</div>
+</div>

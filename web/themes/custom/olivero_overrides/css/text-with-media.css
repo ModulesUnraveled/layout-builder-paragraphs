@@ -1,0 +1,51 @@
+.awesome {
+  display: grid;
+  gap: 1rem;
+  grid-template: "primary secondary";
+  /* This is required for the admin UI since it uses super long example text */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Variations */
+/* Width Options */
+.awesome[data-width="feature"] {
+  width: 100%;
+}
+
+.awesome[data-width="highlight"] {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.awesome[data-width="callout"] {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Layout Options */
+.awesome[data-layout="media-left"] .awesome__text,
+.awesome[data-layout="media-right"] .awesome__media {
+  grid-area: secondary;
+}
+
+.awesome[data-layout="media-left"] .awesome__media,
+.awesome[data-layout="media-right"] .awesome__text {
+  grid-area: primary;
+}
+
+/* Focus Options */
+.awesome[data-focus="equal"] {
+  grid-template-columns: 1fr 1fr;
+}
+
+.awesome[data-focus="text"][data-layout="media-left"],
+.awesome[data-focus="media"][data-layout="media-right"] {
+  grid-template-columns: 1fr 2fr;
+}
+
+.awesome[data-focus="text"][data-layout="media-right"],
+.awesome[data-focus="media"][data-layout="media-left"] {
+  grid-template-columns: 2fr 1fr;
+}
