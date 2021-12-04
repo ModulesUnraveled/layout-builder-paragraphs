@@ -1,0 +1,59 @@
+uuid: 1fbcb4ff-2afe-44de-9b32-e4f34387fc54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.regular_lp_
+  module:
+    - entity_reference_revisions
+id: node.regular_lp_.field_content
+field_name: field_content
+entity_type: node
+bundle: regular_lp_
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      section_lp_:
+        weight: 12
+        enabled: false
+      stories_block:
+        weight: 13
+        enabled: false
+      stories_cta:
+        weight: 14
+        enabled: false
+      stories_curated_content:
+        weight: 15
+        enabled: false
+      stories_link_list:
+        weight: 16
+        enabled: false
+      stories_quote:
+        weight: 17
+        enabled: false
+      stories_table:
+        weight: 18
+        enabled: false
+      stories_text:
+        weight: 19
+        enabled: false
+      stories_views:
+        weight: 20
+        enabled: false
+      text_with_media:
+        weight: 21
+        enabled: false
+      text_with_media_paragraph:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,30 @@
+uuid: 30a57c12-e7d0-4ca1-8ade-ad13e352663e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.regular_lp_.field_content
+    - node.type.regular_lp_
+  module:
+    - layout_paragraphs
+    - user
+id: node.regular_lp_.default
+targetEntityType: node
+bundle: regular_lp_
+mode: default
+content:
+  field_content:
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: layout_paragraphs
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

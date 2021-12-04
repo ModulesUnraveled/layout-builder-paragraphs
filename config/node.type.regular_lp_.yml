@@ -1,0 +1,17 @@
+uuid: 8e5f1629-a631-4988-a9dc-cac2748b5744
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Regular (LP)'
+type: regular_lp_
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

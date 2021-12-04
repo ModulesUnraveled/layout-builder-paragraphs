@@ -1,0 +1,22 @@
+uuid: 319732aa-cdea-4e01-82d2-45ee927ff3b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.regular_lp_.field_content
+    - node.type.regular_lp_
+  module:
+    - user
+id: node.regular_lp_.teaser
+targetEntityType: node
+bundle: regular_lp_
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content: true
