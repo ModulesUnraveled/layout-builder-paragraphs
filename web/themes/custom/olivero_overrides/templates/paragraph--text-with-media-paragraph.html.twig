@@ -4,8 +4,6 @@
 {% set layout = content.field_layout.0['#markup'] %}
 {% set focus = content.field_focus.0['#markup'] %}
 
-{{ dpm(content) }}
-
 <div class='awesome' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
 	<div class='awesome__text'>
 		<h2>{{ content.field_stories_heading }}</h2>
