@@ -1,0 +1,27 @@
+uuid: 7d2c8132-bf51-4eee-ba0f-aab1f84d4908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_lp_.field_content
+    - paragraphs.paragraphs_type.section_lp_
+  module:
+    - layout_paragraphs
+id: paragraph.section_lp_.default
+targetEntityType: paragraph
+bundle: section_lp_
+mode: default
+content:
+  field_content:
+    weight: 0
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      empty_message: ''
+      require_layouts: 0
+    third_party_settings: {  }
+    type: layout_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
