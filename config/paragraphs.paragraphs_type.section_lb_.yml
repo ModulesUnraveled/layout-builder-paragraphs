@@ -1,0 +1,10 @@
+uuid: 360fc094-0e90-46fc-8fc2-08dcdd30b189
+langcode: en
+status: true
+dependencies: {  }
+id: section_lb_
+label: 'Section (LB)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
