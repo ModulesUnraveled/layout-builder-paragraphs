@@ -6,6 +6,7 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+  margin: 2rem auto;
 }
 
 /* Variations */
@@ -16,12 +17,10 @@
 
 .awesome[data-width="highlight"] {
   width: 80%;
-  margin: 0 auto;
 }
 
 .awesome[data-width="callout"] {
   width: 60%;
-  margin: 0 auto;
 }
 
 /* Layout Options */
