@@ -4,13 +4,13 @@
 {% set layout = content.field_layout.0['#markup'] %}
 {% set focus = content.field_focus.0['#markup'] %}
 
-<div class='awesome-wrapper'>
-  <div class='awesome' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
-    <div class='awesome__text'>
+<div class='text-with-media-wrapper'>
+  <div class='text-with-media' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
+    <div class='text-with-media__text'>
       <h2>{{ content.field_stories_heading }}</h2>
       <div>{{ content.field_stories_text_formatted }}</div>
     </div>
-    <div class='awesome__media'>
+    <div class='text-with-media__media'>
       {{ content.field_media }}
     </div>
   </div>
