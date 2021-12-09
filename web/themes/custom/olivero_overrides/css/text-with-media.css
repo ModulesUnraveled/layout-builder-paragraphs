@@ -1,6 +1,7 @@
 .text-with-media {
   display: grid;
-  gap: var(--gutter);
+  column-gap: var(--gutter);
+  row-gap: 1rem;
   grid-template: "primary"
                  "secondary";
   /* This is required for the admin UI since it uses super long example text */
