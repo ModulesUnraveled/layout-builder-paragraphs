@@ -1,7 +1,8 @@
 .text-with-media {
   display: grid;
-  gap: 1rem;
-  grid-template: "primary secondary";
+  gap: 2rem;
+  grid-template: "primary"
+                 "secondary";
   /* This is required for the admin UI since it uses super long example text */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -9,42 +10,51 @@
   margin: 2rem auto;
 }
 
+@media (min-width: 768px) {
+  .text-with-media {
+    grid-template: "primary secondary";
+  }
+}
+
 /* Variations */
 /* Width Options */
-.text-with-media[data-width="feature"] {
-  width: 100%;
+[data-width="feature"] {
+  width: var(--width-feature);
 }
 
-.text-with-media[data-width="highlight"] {
-  width: 80%;
+[data-width="highlight"] {
+  width: var(--width-highlight);
 }
 
-.text-with-media[data-width="callout"] {
-  width: 60%;
+[data-width="callout"] {
+  width: var(--width-callout);
 }
 
 /* Layout Options */
-.text-with-media[data-layout="media-left"] .text-with-media__text,
-.text-with-media[data-layout="media-right"] .text-with-media__media {
+[data-layout="media-left"] .text-with-media__text,
+[data-layout="media-right"] .text-with-media__media {
   grid-area: secondary;
 }
 
-.text-with-media[data-layout="media-left"] .text-with-media__media,
-.text-with-media[data-layout="media-right"] .text-with-media__text {
+[data-layout="media-left"] .text-with-media__media,
+[data-layout="media-right"] .text-with-media__text {
   grid-area: primary;
 }
 
 /* Focus Options */
-.text-with-media[data-focus="equal"] {
-  grid-template-columns: 1fr 1fr;
-}
+@media (min-width: 768px) {
 
-.text-with-media[data-focus="text"][data-layout="media-left"],
-.text-with-media[data-focus="media"][data-layout="media-right"] {
-  grid-template-columns: 1fr 2fr;
-}
+  [data-focus="equal"] {
+    grid-template-columns: 1fr 1fr;
+  }
 
-.text-with-media[data-focus="text"][data-layout="media-right"],
-.text-with-media[data-focus="media"][data-layout="media-left"] {
-  grid-template-columns: 2fr 1fr;
+  [data-focus="text"][data-layout="media-left"],
+  [data-focus="media"][data-layout="media-right"] {
+    grid-template-columns: 3fr 5fr;
+  }
+
+  [data-focus="media"][data-layout="media-left"],
+  [data-focus="text"][data-layout="media-right"] {
+    grid-template-columns: 5fr 3fr;
+  }
 }

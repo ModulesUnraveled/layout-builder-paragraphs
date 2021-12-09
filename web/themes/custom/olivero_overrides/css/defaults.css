@@ -1,3 +1,10 @@
+:root {
+  /* Widths */
+  --width-feature: 90%;
+  --width-highlight: 70%;
+  --width-callout: 50%;
+}
+
 h1,
 h2,
 h3,
