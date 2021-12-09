@@ -22,3 +22,8 @@ regions:
   footer_bottom: "Footer Bottom"
 libraries:
   - olivero_overrides/defaults
+libraries-override:
+  olivero/global-styling:
+    css:
+      layout:
+        css/layout/grid.css: false
