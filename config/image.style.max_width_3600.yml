@@ -1,0 +1,15 @@
+uuid: 65ff80d2-9552-495c-8003-1ba6278051c5
+langcode: en
+status: true
+dependencies: {  }
+name: max_width_3600
+label: 'Max-width (3600)'
+effects:
+  73dbef38-c2bb-42d5-8580-bc9fc0977bb6:
+    uuid: 73dbef38-c2bb-42d5-8580-bc9fc0977bb6
+    id: image_scale
+    weight: 1
+    data:
+      width: 3600
+      height: null
+      upscale: false

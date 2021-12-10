@@ -1,0 +1,15 @@
+uuid: 9ae30fd9-e412-48d1-bd7d-58f8b58738d2
+langcode: en
+status: true
+dependencies: {  }
+name: max_width_2560
+label: 'Max-width (2560)'
+effects:
+  0daee290-f133-4a82-820a-d52998a5bfc2:
+    uuid: 0daee290-f133-4a82-820a-d52998a5bfc2
+    id: image_scale
+    weight: 1
+    data:
+      width: 2560
+      height: null
+      upscale: false

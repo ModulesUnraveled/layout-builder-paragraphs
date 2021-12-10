@@ -1,0 +1,15 @@
+uuid: c9869f2c-04f8-40ff-a1c8-4f7f7da2ed9f
+langcode: en
+status: true
+dependencies: {  }
+name: max_width_4000
+label: 'Max-width (4000)'
+effects:
+  42f98a91-2c3e-41fe-b40a-09534883accb:
+    uuid: 42f98a91-2c3e-41fe-b40a-09534883accb
+    id: image_scale
+    weight: 1
+    data:
+      width: 4000
+      height: null
+      upscale: false
