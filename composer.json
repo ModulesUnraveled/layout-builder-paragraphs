@@ -29,6 +29,7 @@
         "drupal/layout_paragraphs": "^2.0",
         "drupal/layout_paragraphs_restriction": "^1.0@alpha",
         "drupal/stories": "^2.0@alpha",
+        "drupal/twig_tweak": "^3.1",
         "drush-ops/behat-drush-endpoint": "^9.4",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*"
