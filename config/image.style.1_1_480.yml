@@ -1,0 +1,17 @@
+uuid: c4d5db8a-4dcd-4aec-8b62-293b4cf30caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.1_1
+  module:
+    - crop
+name: '1_1_480'
+label: '1:1 (480)'
+effects:
+  8e6bbeac-09fd-49a8-a85e-9e1d509bf23c:
+    uuid: 8e6bbeac-09fd-49a8-a85e-9e1d509bf23c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_1'

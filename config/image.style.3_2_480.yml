@@ -1,0 +1,17 @@
+uuid: 208444b5-4bb6-4570-83ae-3978c76f924c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3_2
+  module:
+    - crop
+name: '3_2_480'
+label: '3:2 (480)'
+effects:
+  ebd92876-7db1-4599-9b0d-0ab1e69919fd:
+    uuid: ebd92876-7db1-4599-9b0d-0ab1e69919fd
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '3_2'

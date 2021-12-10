@@ -1,0 +1,12 @@
+uuid: 14b76cec-db31-4e84-b7bd-795f2d17fb0f
+langcode: en
+status: true
+dependencies: {  }
+id: '4_3'
+label: '4:3'
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

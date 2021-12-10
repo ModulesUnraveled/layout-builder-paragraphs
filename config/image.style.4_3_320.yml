@@ -1,0 +1,26 @@
+uuid: 4a34c033-6887-4515-b2f4-66d50d64955a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3
+  module:
+    - crop
+    - focal_point
+name: '4_3_320'
+label: '4:3 (320)'
+effects:
+  4105f0ae-9360-47dc-baca-0c42b8a0763d:
+    uuid: 4105f0ae-9360-47dc-baca-0c42b8a0763d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '4_3'
+  f4f05610-259b-42db-bdee-72d74ac2457f:
+    uuid: f4f05610-259b-42db-bdee-72d74ac2457f
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 320
+      height: 240
+      crop_type: focal_point
