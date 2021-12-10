@@ -1,0 +1,10 @@
+uuid: dc9c3b3a-f994-4456-908c-18c903e3336f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_content_callout
+label: 'Focus Content (Callout)'
+targetEntityType: media
+cache: true

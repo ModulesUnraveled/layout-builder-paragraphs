@@ -1,0 +1,10 @@
+uuid: d0cba0e2-4a5b-4dc4-92b7-c749337fdcca
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.half_width_highlight
+label: 'Half-width (Highlight)'
+targetEntityType: media
+cache: true

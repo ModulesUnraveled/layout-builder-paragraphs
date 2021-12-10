@@ -1,0 +1,10 @@
+uuid: 2dff916e-50f3-4e14-abdb-d4ff938c689c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.text_with_content_equal_highlight_
+label: 'Text with Content (Equal - Highlight)'
+targetEntityType: paragraph
+cache: true

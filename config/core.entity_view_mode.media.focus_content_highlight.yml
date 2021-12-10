@@ -1,0 +1,10 @@
+uuid: e2a35732-d3e5-41aa-8d4e-d4f4ee980145
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_content_highlight
+label: 'Focus Content (Highlight)'
+targetEntityType: media
+cache: true

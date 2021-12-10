@@ -1,0 +1,10 @@
+uuid: c25223fe-2b78-4d4e-9b9f-89c9e158764e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_media_highlight
+label: 'Focus Media (Highlight)'
+targetEntityType: media
+cache: true

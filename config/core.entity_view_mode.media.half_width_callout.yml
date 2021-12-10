@@ -1,0 +1,10 @@
+uuid: b34cc11d-3181-46a9-8022-1b07459f8a5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.half_width_callout
+label: 'Half-width (Callout)'
+targetEntityType: media
+cache: true

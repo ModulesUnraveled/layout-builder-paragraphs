@@ -1,0 +1,10 @@
+uuid: e54b291d-9d77-4e6f-b1ff-b2eb5b5d65d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_media_callout
+label: 'Focus Media (Callout)'
+targetEntityType: media
+cache: true

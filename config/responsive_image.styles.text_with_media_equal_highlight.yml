@@ -1,0 +1,21 @@
+uuid: ff31d756-2741-4c05-bd79-47d3903231c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_width_320
+    - image.style.max_width_480
+id: text_with_media_equal_highlight
+label: 'Text with Media (Equal - Highlight)'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 2400px) 840px, (min-width: 768px) 35vw, 70vw'
+      sizes_image_styles:
+        - max_width_320
+        - max_width_480
+breakpoint_group: responsive_image
+fallback_image_style: max_width_320

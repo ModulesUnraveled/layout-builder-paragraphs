@@ -1,19 +1,25 @@
-uuid: b2fc7a9a-a149-4324-b317-ba3712a412ce
+uuid: eb048475-7422-4c1c-88f2-c86c1ec4f7eb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.focus_content_feature
     - field.field.media.image.field_media_image
     - media.type.image
     - responsive_image.styles.text_with_media_equal_callout
   module:
+    - layout_builder
     - responsive_image
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
-id: media.image.default
+id: media.image.focus_content_feature
 targetEntityType: media
 bundle: image
-mode: default
+mode: focus_content_feature
 content:
   field_media_image:
     label: visually_hidden

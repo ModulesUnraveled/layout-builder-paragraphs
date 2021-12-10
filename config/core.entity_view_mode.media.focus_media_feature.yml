@@ -1,0 +1,10 @@
+uuid: d35a2e50-c4fb-4636-b5f1-c823cbe950a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_media_feature
+label: 'Focus Media (Feature)'
+targetEntityType: media
+cache: true

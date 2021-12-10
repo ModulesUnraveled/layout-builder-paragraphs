@@ -1,0 +1,10 @@
+uuid: 848fc7ee-20ad-4ad0-aa7e-89ae1ac80b28
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.text_with_content_equal_callout_
+label: 'Text with Content (Equal - Callout)'
+targetEntityType: paragraph
+cache: true

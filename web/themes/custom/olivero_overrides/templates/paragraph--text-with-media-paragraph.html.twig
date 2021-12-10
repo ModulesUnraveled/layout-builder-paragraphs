@@ -1,17 +1,64 @@
 {{ attach_library('olivero_overrides/text_with_media') }}
 
+{# {{ dd(content.field_media.0['#media'].field_media_image.entity.uri.0.value) }} #}
+
+{# Determine attributes #}
 {% set width = content.field_width.0['#markup'] %}
 {% set layout = content.field_layout.0['#markup'] %}
 {% set focus = content.field_focus.0['#markup'] %}
+{% set image_uri = content.field_media.0['#media'].field_media_image.entity.uri.0.value %}
+
+{# Determine Image Style #}
+{# Equal Focus #}
+{% if focus == 'equal' %}
+  {# {% if width == 'feature' %}
+		{% set image_style = 'text_with_media_equal_feature' %}
+	{% elseif width == 'highlight' %}
+		{% set image_style = 'text_with_media_equal_highlight' %}
+	{% else %}
+		{% set image_style = 'text_with_media_equal_callout' %}
+	{% endif %} #}
+  {% set image_style = width == 'feature' ? 'text_with_media_equal_feauture' : width == highlight ? 'text_with_media_equal_highlight' : 'text_with_media_equal_callout' %}
+
+{# Media Focus #}
+{% elseif focus == 'media' %}
+  {% if width == 'feature' %}
+		{% set image_style = 'text_with_media_equal_feature' %}
+	{% elseif width == 'highlight' %}
+		{% set image_style = 'text_with_media_equal_highlight' %}
+	{% else %}
+		{% set image_style = 'text_with_media_equal_callout' %}
+	{% endif %}
+{# Text Focus #}
+{% else %}
+  {% if width == 'feature' %}
+		{% set image_style = 'text_with_media_equal_feature' %}
+	{% elseif width == 'highlight' %}
+		{% set image_style = 'text_with_media_equal_highlight' %}
+	{% else %}
+		{% set image_style = 'text_with_media_equal_callout' %}
+	{% endif %}
+{% endif %}
+
+{{ dd(image_style) }}
+{# {{ dd(view_mode) }} #}
+{# {{ dd(paragraph_view_mode) }} #}
 
 <div class='text-with-media-wrapper'>
-  <div class='text-with-media' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
-    <div class='text-with-media__text'>
-      <h2>{{ content.field_stories_heading }}</h2>
-      <div>{{ content.field_stories_text_formatted }}</div>
-    </div>
-    <div class='text-with-media__media'>
-      {{ content.field_media }}
-    </div>
-  </div>
+	<div class='text-with-media' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
+		<div class='text-with-media__text'>
+			<h2>{{ content.field_stories_heading }}</h2>
+			<div>{{ content.field_stories_text_formatted }}</div>
+		</div>
+		<div class='text-with-media__media'>
+      {# Just show the field (requires pre-processes) #}
+      {# {{ content.field_media }} #}
+
+      {# Select a view mode for the media entity #}
+      {# {{ content.field_media.0['#media']|view(view_mode) }} #}
+
+      {# Select a responsive image style for the image on the media entity #}
+			{{ drupal_image(image_uri, image_style, responsive=true) }}
+		</div>
+	</div>
 </div>

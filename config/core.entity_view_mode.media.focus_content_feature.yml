@@ -1,0 +1,10 @@
+uuid: 170d7ae9-1279-452c-a185-38fb533df27e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.focus_content_feature
+label: 'Focus Content (Feature)'
+targetEntityType: media
+cache: true
