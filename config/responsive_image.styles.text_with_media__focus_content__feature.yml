@@ -1,4 +1,4 @@
-uuid: ff31d756-2741-4c05-bd79-47d3903231c9
+uuid: dd906eed-29c2-42fb-91d9-2d19dce9c422
 langcode: en
 status: true
 dependencies:
@@ -32,15 +32,15 @@ dependencies:
     - image.style.max_width_640
     - image.style.max_width_800
     - image.style.max_width_960
-id: text_with_media_equal_highlight
-label: 'Text with Media (Equal - Highlight)'
+id: text_with_media__focus_content__feature
+label: 'Text with Media (Focus Content - Feature)'
 image_style_mappings:
   -
     breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
-      sizes: '(min-width: 2400px) 840px, (min-width: 768px) 35vw, 70vw'
+      sizes: '(min-width: 2400px) 1296px, (min-width: 768px) 54vw, 90vw'
       sizes_image_styles:
         - max_width_1120
         - max_width_1280

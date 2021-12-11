@@ -1,0 +1,75 @@
+uuid: a92ec05f-073a-499f-b11b-407d989839dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_width_1120
+    - image.style.max_width_1280
+    - image.style.max_width_1440
+    - image.style.max_width_1600
+    - image.style.max_width_1760
+    - image.style.max_width_1920
+    - image.style.max_width_2080
+    - image.style.max_width_2240
+    - image.style.max_width_2400
+    - image.style.max_width_2560
+    - image.style.max_width_2720
+    - image.style.max_width_2880
+    - image.style.max_width_3040
+    - image.style.max_width_320
+    - image.style.max_width_3200
+    - image.style.max_width_3360
+    - image.style.max_width_3520
+    - image.style.max_width_3600
+    - image.style.max_width_3840
+    - image.style.max_width_4000
+    - image.style.max_width_4160
+    - image.style.max_width_4320
+    - image.style.max_width_4480
+    - image.style.max_width_4640
+    - image.style.max_width_480
+    - image.style.max_width_4800
+    - image.style.max_width_640
+    - image.style.max_width_800
+    - image.style.max_width_960
+id: text_with_media__focus_media__feature
+label: 'Text with Media (Focus Media - Feature)'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 2400px) 1296px, (min-width: 768px) 54vw, 90vw'
+      sizes_image_styles:
+        - max_width_1120
+        - max_width_1280
+        - max_width_1440
+        - max_width_1600
+        - max_width_1760
+        - max_width_1920
+        - max_width_2080
+        - max_width_2240
+        - max_width_2400
+        - max_width_2560
+        - max_width_2720
+        - max_width_2880
+        - max_width_3040
+        - max_width_320
+        - max_width_3200
+        - max_width_3360
+        - max_width_3520
+        - max_width_3600
+        - max_width_3840
+        - max_width_4000
+        - max_width_4160
+        - max_width_4320
+        - max_width_4480
+        - max_width_4640
+        - max_width_480
+        - max_width_4800
+        - max_width_640
+        - max_width_800
+        - max_width_960
+breakpoint_group: responsive_image
+fallback_image_style: max_width_320

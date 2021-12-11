@@ -12,13 +12,13 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: equal
+      value: focus_equal
       label: Equal
     -
-      value: text
-      label: Text
+      value: focus_content
+      label: Content
     -
-      value: media
+      value: focus_media
       label: Media
   allowed_values_function: ''
 module: options

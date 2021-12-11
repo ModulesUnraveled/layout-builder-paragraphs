@@ -32,13 +32,13 @@
 }
 
 /* Layout Options */
-[data-layout="media-left"] .text-with-media__text,
+[data-layout="media-left"] .text-with-media__content,
 [data-layout="media-right"] .text-with-media__media {
   grid-area: secondary;
 }
 
 [data-layout="media-left"] .text-with-media__media,
-[data-layout="media-right"] .text-with-media__text {
+[data-layout="media-right"] .text-with-media__content {
   grid-area: primary;
 }
 
@@ -49,13 +49,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  [data-focus="text"][data-layout="media-left"],
+  [data-focus="content"][data-layout="media-left"],
   [data-focus="media"][data-layout="media-right"] {
     grid-template-columns: 3fr 5fr;
   }
 
   [data-focus="media"][data-layout="media-left"],
-  [data-focus="text"][data-layout="media-right"] {
+  [data-focus="content"][data-layout="media-right"] {
     grid-template-columns: 5fr 3fr;
   }
 }

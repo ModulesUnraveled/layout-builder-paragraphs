@@ -30,12 +30,12 @@
   {% endif %}
 {# Text Focus #}
 {% else %}
-  {% if width == 'focus_feature' %}
-    {% set image_style = 'text_with_media__focus_text__feature' %}
+  {% if width == 'feature' %}
+    {% set image_style = 'text_with_media__focus_content__feature' %}
   {% elseif width == 'highlight' %}
-    {% set image_style = 'text_with_media__focus_text__highlight' %}
+    {% set image_style = 'text_with_media__focus_content__highlight' %}
   {% else %}
-    {% set image_style = 'text_with_media__focus_text__callout' %}
+    {% set image_style = 'text_with_media__focus_content__callout' %}
   {% endif %}
 {% endif %}
 
@@ -49,7 +49,7 @@
 
 <div class='text-with-media-wrapper'>
   <div class='text-with-media' data-width={{ width }} data-layout={{ layout }} data-focus={{ focus }}>
-    <div class='text-with-media__text'>
+    <div class='text-with-media__content'>
       <h2>{{ content.field_stories_heading }}</h2>
       <div>{{ content.field_stories_text_formatted }}</div>
     </div>
