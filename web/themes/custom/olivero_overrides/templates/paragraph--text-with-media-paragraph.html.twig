@@ -1,42 +1,47 @@
 {{ attach_library('olivero_overrides/text_with_media') }}
 
-{# {{ dd(content.field_media.0['#media'].field_media_image.entity.uri.0.value) }} #}
-
 {# Determine attributes #}
 {% set width = content.field_width.0['#markup'] %}
 {% set layout = content.field_layout.0['#markup'] %}
 {% set focus = content.field_focus.0['#markup'] %}
 {% set image_uri = content.field_media.0['#media'].field_media_image.entity.uri.0.value %}
 
+{# Set Image Style #}
+{% set image_styles = 'text_with_media__' ~ focus ~ '__' ~ width %}
+
 {# Determine Image Style #}
 {# Equal Focus #}
-{% if focus == 'equal' %}
+{% if focus == 'focus_equal' %}
   {% if width == 'feature' %}
-    {% set image_style = 'text_with_media_equal_feature' %}
+    {% set image_style = 'text_with_media__focus_equal__feature' %}
   {% elseif width == 'highlight' %}
-    {% set image_style = 'text_with_media_equal_highlight' %}
+    {% set image_style = 'text_with_media__focus_equal__highlight' %}
   {% else %}
-    {% set image_style = 'text_with_media_equal_callout' %}
+    {% set image_style = 'text_with_media__focus_equal__callout' %}
   {% endif %}
 {# Media Focus #}
-{% elseif focus == 'media' %}
+{% elseif focus == 'focus_media' %}
   {% if width == 'feature' %}
-    {% set image_style = 'text_with_media_focus_media_feature' %}
+    {% set image_style = 'text_with_media__focus_media_feature' %}
   {% elseif width == 'highlight' %}
-    {% set image_style = 'text_with_media_focus_media_highlight' %}
+    {% set image_style = 'text_with_media__focus_media__highlight' %}
   {% else %}
-    {% set image_style = 'text_with_media_focus_media_callout' %}
+    {% set image_style = 'text_with_media__focus_media__callout' %}
   {% endif %}
 {# Text Focus #}
 {% else %}
-  {% if width == 'feature' %}
-    {% set image_style = 'text_with_media_focus_text_feature' %}
+  {% if width == 'focus_feature' %}
+    {% set image_style = 'text_with_media__focus_text__feature' %}
   {% elseif width == 'highlight' %}
-    {% set image_style = 'text_with_media_focus_text_highlight' %}
+    {% set image_style = 'text_with_media__focus_text__highlight' %}
   {% else %}
-    {% set image_style = 'text_with_media_focus_text_callout' %}
+    {% set image_style = 'text_with_media__focus_text__callout' %}
   {% endif %}
 {% endif %}
+
+
+{{ dd(image_style) }}
+{{ dd(image_styles) }}
 
 {# {{ dd(image_style) }} #}
 {# {{ dd(view_mode) }} #}
