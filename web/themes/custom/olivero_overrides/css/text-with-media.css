@@ -45,17 +45,17 @@
 /* Focus Options */
 @media (min-width: 768px) {
 
-  [data-focus="equal"] {
+  [data-focus="focus_equal"] {
     grid-template-columns: 1fr 1fr;
   }
 
-  [data-focus="content"][data-layout="media-left"],
-  [data-focus="media"][data-layout="media-right"] {
-    grid-template-columns: 3fr 5fr;
+  [data-focus="focus_content"][data-layout="media-left"],
+  [data-focus="focus_media"][data-layout="media-right"] {
+  grid-template-columns: 3fr 5fr;
   }
 
-  [data-focus="media"][data-layout="media-left"],
-  [data-focus="content"][data-layout="media-right"] {
+  [data-focus="focus_media"][data-layout="media-left"],
+  [data-focus="focus_content"][data-layout="media-right"] {
     grid-template-columns: 5fr 3fr;
   }
 }
