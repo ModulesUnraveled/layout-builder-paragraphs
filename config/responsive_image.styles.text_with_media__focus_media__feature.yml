@@ -40,7 +40,7 @@ image_style_mappings:
     multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
-      sizes: '(min-width: 2400px) 1350px, (min-width: 768px) 0.5625vw, 90vw'
+      sizes: '(min-width: 2400px) 1350px, (min-width: 768px) 56.25vw, 90vw'
       sizes_image_styles:
         - max_width_1120
         - max_width_1280
