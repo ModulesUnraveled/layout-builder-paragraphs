@@ -11,8 +11,60 @@ dependencies:
     - field.field.paragraph.text_with_media_paragraph.field_width
     - paragraphs.paragraphs_type.text_with_media_paragraph
   module:
+    - field_group
     - inline_entity_form
     - text
+third_party_settings:
+  field_group:
+    group_display_settings:
+      children:
+        - field_width
+        - field_layout
+        - field_focus
+      parent_name: group_tabs
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Display Settings'
+    group_tabs:
+      children:
+        - group_content
+        - group_display_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_content:
+      children:
+        - field_stories_heading
+        - field_stories_text_formatted
+        - field_media
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Content
 id: paragraph.text_with_media_paragraph.default
 targetEntityType: paragraph
 bundle: text_with_media_paragraph
@@ -25,13 +77,13 @@ content:
     type: options_select
     region: content
   field_layout:
-    weight: 3
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_media:
-    weight: 2
+    weight: 3
     settings:
       form_mode: default
       label_singular: ''
@@ -48,7 +100,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_stories_heading:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -56,7 +108,7 @@ content:
     type: string_textfield
     region: content
   field_stories_text_formatted:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
